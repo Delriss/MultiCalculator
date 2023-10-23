@@ -4,8 +4,8 @@ const api = "https://api.exchangerate-api.com/v4/latest/USD";
 // For selecting different controls
 let search = document.querySelector(".searchBox");
 let convert = document.querySelector(".convert");
-let fromCurrecy = document.querySelector(".from");
-let toCurrecy = document.querySelector(".to");
+let fromTemperature = document.querySelector(".from");
+let toTemperature = document.querySelector(".to");
 let finalValue = document.querySelector(".finalValue");
 let finalAmount = document.getElementById("finalAmount");
 let resultFrom;
@@ -13,12 +13,12 @@ let resultTo;
 let searchValue;
  
 // Event when currency is changed
-fromCurrecy.addEventListener('change', (event) => {
+fromTemperature.addEventListener('change', (event) => {
     resultFrom = `${event.target.value}`;
 });
  
 // Event when currency is changed
-toCurrecy.addEventListener('change', (event) => {
+toTemperature.addEventListener('change', (event) => {
     resultTo = `${event.target.value}`;
 });
  
