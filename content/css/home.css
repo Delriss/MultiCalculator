@@ -1,0 +1,164 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-image: linear-gradient(125deg,#001570,#9c0051, #5f0077);
+  background-size: 400% 400%;
+  animation: bganimation 25s infinite;
+}
+
+.tableWrap{
+    display: block;
+    width:100%;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+
+.coursesTable {
+    border-collapse: collapse;
+    width: 90%;
+    max-width:1000px;
+    margin:auto;
+    border-radius: 5px;
+  }
+  
+  .coursesTable td, .coursesTable th {
+    padding: 6px;
+  }
+  
+  .coursesTable tr:nth-child(even){background-color: #f7f7f7;}
+  
+  .coursesTable tr:hover {background-color: #ddd;}
+
+  .coursesTable tr{
+      text-align: center;
+  }
+  
+  .coursesTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+.swal2-content{
+  font-family: 'Poppins', sans-serif
+}
+
+label {
+  font-family: 'Poppins', sans-serif
+}
+
+.flickity-cell {
+  width: 60%;
+  min-height: 35vh;
+  height:fit-content;
+  position: relative;
+  padding:25px;
+  background-color: white;
+  border-radius: 15px;
+  margin-right:50px;
+  margin-left:50px;
+  border-color: white;
+  border-width: 1px;
+  background-color: #11171f;
+  color:white;
+}
+
+.flickity-cell .container {
+  height: 100%;
+}
+
+.flickity-button {
+  display: none !important;
+}
+
+.card-title{
+  padding:10px;
+}
+
+.card-text{
+  padding:10px;
+}
+
+.card-description{
+  height:100px;
+  overflow-y: scroll; 
+}
+
+.card-description::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card-description::-webkit-scrollbar-thumb{
+  height:10%;
+  background-color:gray;
+  border-radius: 5px;
+}
+
+.titleWrapper{
+  text-align: center;
+  color:white;
+}
+
+@media only screen and (max-width: 800px) {
+  .flickity-cell {
+    width: 90%;
+    padding:10px;
+    padding-bottom: 20px;
+  }
+  .card-text{
+    padding:7px;
+  }
+
+}
+
+html,body{
+  height: 100%;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+    background-image: url('../assets/loading.gif');
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-position: center;
+}
+
+.footer{
+  margin-top:100px !important;
+  background-color: #11171f;
+}
+
+.field{
+  max-height: 100px;
+  max-width: 200px;
+  overflow-y: auto;
+}
+
+.field::-webkit-scrollbar {
+  height:4px;
+  width:7px;
+}
+
+.field::-webkit-scrollbar-thumb{
+  height:10%;
+  background-color:gray;
+  border-radius: 5px;
+}
+
+.copyright{
+  width:100%;
+  text-align: center;
+  color:white;
+}
