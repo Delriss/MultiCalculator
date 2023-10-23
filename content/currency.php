@@ -34,7 +34,7 @@
           <p class="lead">Please choose your chosen currencies to convert between from the dropdowns.</p>
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">Convert From:</span>
-            <select id="currencyOne" class="form-select" aria-label="CurrencySelect">
+            <select id="currencyFrom" class="form-select" aria-label="CurrencySelect">
               <option selected>Choose Currency</option>
               <option value="1">GBP</option>
               <option value="2">USD</option>
@@ -46,7 +46,7 @@
 
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">Convert To:</span>
-            <select id="currencyTwo" class="form-select" aria-label="CurrencySelect">
+            <select id="currencyTo" class="form-select" aria-label="CurrencySelect">
               <option selected>Choose Currency</option>
               <option value="1">GBP</option>
               <option value="2">USD</option>
@@ -61,12 +61,15 @@
           <p class="lead">Please enter the amount you wish to convert.</p>
           <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">Amount to Convert:</span>
-            <input type="text" class="form-control" placeholder="Enter Amount" aria-label="ConversionAmount" aria-describedby="addon-wrapping">
+            <input id="currencyAmount" type="text" class="form-control" placeholder="Enter Amount" aria-label="ConversionAmount" aria-describedby="addon-wrapping">
           </div>
     
           <hr>
-
-          <p class="lead">Result:</p>
+          <button id="btnCurrencyCalc">Convert</button>
+          <div class="d-flex flex-column">
+            <p class="lead">Your converted amount is:</p>
+            <p id="currencyResult"></p>
+          </div>
           
       </main>
       <!-- Main Content END-->
@@ -80,6 +83,6 @@
 <!-- Import Scripts -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
-<script src="js/currency.js"></script>
+<script src="js/script.js"></script>
 
 </html>
