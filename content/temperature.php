@@ -40,7 +40,7 @@
                 <label for="oamount">
                     Amount to Convert :
                 </label>
-                <input type="text" class="form-control searchBox" placeholder="0.00" id="oamount">
+                <input type="text" class="form-control searchBox" placeholder="0" id="oamount">
             </div>
             <div class="row">
                 <div class="col-sm-6">
