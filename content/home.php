@@ -26,14 +26,14 @@
         <div id='card-body' class='card-body text-center'>
           <h5 class='card-title'>Currency Converter</h5>
           <p class='card-text'>You can use this service to convert an Amount of One Currency to Another Currency.</p>
-          <a href='#' class='cancelEnrolmentButton btn btn-success mt-5'>Go Here</a>
+          <a href='currency' class='cancelEnrolmentButton btn btn-success mt-5'>Go Here</a>
         </div> 
       </div>
       <div id='card' class='card text-center'>
         <div id='card-body' class='card-body'>
           <h5 class='card-title'>Temperature Converter</h5>
           <p class='card-text'>You can use this service to convert a Temperature from unit Unit to Another.</p>
-          <a href='#' class='cancelEnrolmentButton btn btn-success mt-5'>Go Here</a>
+          <a href='temperature' class='cancelEnrolmentButton btn btn-success mt-5'>Go Here</a>
         </div> 
       </div>
 
@@ -51,7 +51,7 @@
 <!-- flickity CDN Link -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="../js/scripts.js"></script>
+<script src="../js/rain.js"></script>
 <script rel="preconnect" src="../js/preloader.js"></script>
 <script src="../content/js/add_enrolment_form.js"></script>
 
