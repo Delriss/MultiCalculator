@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Cinzel:wght@400;700&family=Raleway&display=swap");
+.title {
+  font-family: "Cinzel", sans-serif;
+}
+
+.subHeader {
+  font-family: "Abel", sans-serif;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}
+
+.navHeader .navLinks {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+  text-decoration: none;
+}
+
+.navHeader .navLinks:hover,
+.navHeader .navLinks:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.navHeader .navLinks + .navLinks {
+  margin-left: 1rem;
+}
+
+.navHeader .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.pageArea {
+  width: 100%;
+  min-height: 95vh;
+}
+
+.contentBox {
+  max-width: 42em;
+}
