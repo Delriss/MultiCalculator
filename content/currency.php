@@ -48,11 +48,11 @@
             <span class="input-group-text" id="addon-wrapping">Convert To:</span>
             <select id="currencyTo" class="form-select" aria-label="CurrencySelect">
               <option selected>Choose Currency</option>
-              <option value="1">GBP</option>
-              <option value="2">USD</option>
-              <option value="3">EUR</option>
-              <option value="4">JPY</option>
-              <option value="5">AUD</option>
+              <option value="GBP">GBP</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="JPY">JPY</option>
+              <option value="AUD">AUD</option>
             </select>
           </div>
 
@@ -68,7 +68,7 @@
           <button id="btnCurrencyCalc">Convert</button>
           <div class="d-flex flex-column">
             <p class="lead">Your converted amount is:</p>
-            <p id="currencyResult"></p>
+            <p id="currencyResult" class="fs-5"></p>
           </div>
           
       </main>
