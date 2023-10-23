@@ -44,3 +44,43 @@ body {
 .contentBox {
   max-width: 42em;
 }
+=======
+ 
+#finalAmount {
+    font-family: 'Lobster', cursive;
+    display: none;
+    margin: 50px auto;
+}
+ 
+#finalAmount h2 {
+    font-size: 50px;
+}
+ 
+.finalValue {
+    font-family: 'Amiri', serif;
+}
+ 
+@media (max-width: 768px) {
+    hr {
+        width: 60%;
+    }
+ 
+    .main {
+        width: 100%;
+    }
+}
+ 
+@media (max-width: 400px) {
+    .heading {
+        font-size: 60px;
+    }
+ 
+    hr {
+        width: 75%;
+    }
+ 
+    #finalAmount h2,
+    .finalValue {
+        font-size: 40px;
+    }
+}
