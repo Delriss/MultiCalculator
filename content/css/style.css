@@ -1,38 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Cinzel:wght@400;700&family=Raleway&display=swap");
+.title {
+  font-family: "Cinzel", sans-serif;
+}
+
+.subHeader {
+  font-family: "Abel", sans-serif;
+}
+
 body {
-    background-color: aliceblue;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
 }
- 
-.heading {
-    font-family: 'Pacifico', cursive;
-    margin: 35px auto 20px;
+
+.navHeader .navLinks {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+  text-decoration: none;
 }
- 
-hr {
-    border-top: 2px solid black;
-    width: 40%;
-    margin-bottom: 55px;
+
+.navHeader .navLinks:hover,
+.navHeader .navLinks:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
 }
- 
-.main {
-    width: 50vw;
-    margin: auto;
-    padding: 30px;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+
+.navHeader .navLinks + .navLinks {
+  margin-left: 1rem;
 }
- 
-label {
-    font-size: 20px;
+
+.navHeader .active {
+  color: #fff;
+  border-bottom-color: #fff;
 }
- 
-.btn {
-    width: 200px;
+
+.pageArea {
+  width: 100%;
+  min-height: 95vh;
 }
+
+.contentBox {
+  max-width: 42em;
+}
+=======
  
 #finalAmount {
     font-family: 'Lobster', cursive;
@@ -72,4 +84,3 @@ label {
         font-size: 40px;
     }
 }
-

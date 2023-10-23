@@ -1,200 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency Converter</title>
-    <link rel="stylesheet"
-          href=
-"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-    </script>
-    <script src=
-"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
-    </script>
-    <script src=
-"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
-    </script>
- 
-    <link rel="preconnect"
-          href=
-"https://fonts.gstatic.com">
-    <link href=
-"https://fonts.googleapis.com/css2?family=Amiri&family=Lobster&family=Pacifico&display=swap"
-        rel="stylesheet">
-    <!-- linking style.css file-->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+
+  <!--Stylesheets-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
 </head>
- 
-<body>
-    <!-- Currency Converter -->
-    <h1 class="heading text-center display-2">
-        Currency Converter
-    </h1>
-    <hr>
-    <div class="container">
-        <div class="main">
-            <div class="form-group">
-                <label for="oamount">
-                    Amount to Convert :
-                </label>
-                <input type="text" class="form-control searchBox" placeholder="0.00" id="oamount">
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">From</span>
-                        </div>
-                        <select class="form-control from" id="sel1">
-                            <option value="">Select One …</option>
-                            <option value="USD">USD</option>
-                            <option value="AED">AED</option>
-                            <option value="ARS">ARS</option>
-                            <option value="AUD">AUD</option>
-                            <option value="BGN">BGN</option>
-                            <option value="BRL">BRL</option>
-                            <option value="BSD">BSD</option>
-                            <option value="CAD">CAD</option>
-                            <option value="CHF">CHF</option>
-                            <option value="CLP">CLP</option>
-                            <option value="CNY">CNY</option>
-                            <option value="COP">COP</option>
-                            <option value="CZK">CZK</option>
-                            <option value="DKK">DKK</option>
-                            <option value="DOP">DOP</option>
-                            <option value="EGP">EGP</option>
-                            <option value="EUR">EUR</option>
-                            <option value="FJD">FJD</option>
-                            <option value="GBP">GBP</option>
-                            <option value="GTQ">GTQ</option>
-                            <option value="HKD">HKD</option>
-                            <option value="HRK">HRK</option>
-                            <option value="HUF">HUF</option>
-                            <option value="IDR">IDR</option>
-                            <option value="ILS">ILS</option>
-                            <option value="INR">INR</option>
-                            <option value="ISK">ISK</option>
-                            <option value="JPY">JPY</option>
-                            <option value="KRW">KRW</option>
-                            <option value="KZT">KZT</option>
-                            <option value="MVR">MVR</option>
-                            <option value="MXN">MXN</option>
-                            <option value="MYR">MYR</option>
-                            <option value="NOK">NOK</option>
-                            <option value="NZD">NZD</option>
-                            <option value="PAB">PAB</option>
-                            <option value="PEN">PEN</option>
-                            <option value="PHP">PHP</option>
-                            <option value="PKR">PKR</option>
-                            <option value="PLN">PLN</option>
-                            <option value="PYG">PYG</option>
-                            <option value="RON">RON</option>
-                            <option value="RUB">RUB</option>
-                            <option value="SAR">SAR</option>
-                            <option value="SEK">SEK</option>
-                            <option value="SGD">SGD</option>
-                            <option value="THB">THB</option>
-                            <option value="TRY">TRY</option>
-                            <option value="TWD">TWD</option>
-                            <option value="UAH">UAH</option>
-                            <option value="UYU">UYU</option>
-                            <option value="ZAR">ZAR</option>
-                        </select>
-                    </div>
-                </div>
- 
-                <div class="col-sm-6">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">To</span>
-                        </div>
-                        <select class="form-control to" id="sel2">
-                            <option value="">Select One …</option>
-                            <option value="USD">USD</option>
-                            <option value="AED">AED</option>
-                            <option value="ARS">ARS</option>
-                            <option value="AUD">AUD</option>
-                            <option value="BGN">BGN</option>
-                            <option value="BRL">BRL</option>
-                            <option value="BSD">BSD</option>
-                            <option value="CAD">CAD</option>
-                            <option value="CHF">CHF</option>
-                            <option value="CLP">CLP</option>
-                            <option value="CNY">CNY</option>
-                            <option value="COP">COP</option>
-                            <option value="CZK">CZK</option>
-                            <option value="DKK">DKK</option>
-                            <option value="DOP">DOP</option>
-                            <option value="EGP">EGP</option>
-                            <option value="EUR">EUR</option>
-                            <option value="FJD">FJD</option>
-                            <option value="GBP">GBP</option>
-                            <option value="GTQ">GTQ</option>
-                            <option value="HKD">HKD</option>
-                            <option value="HRK">HRK</option>
-                            <option value="HUF">HUF</option>
-                            <option value="IDR">IDR</option>
-                            <option value="ILS">ILS</option>
-                            <option value="INR">INR</option>
-                            <option value="ISK">ISK</option>
-                            <option value="JPY">JPY</option>
-                            <option value="KRW">KRW</option>
-                            <option value="KZT">KZT</option>
-                            <option value="MVR">MVR</option>
-                            <option value="MXN">MXN</option>
-                            <option value="MYR">MYR</option>
-                            <option value="NOK">NOK</option>
-                            <option value="NZD">NZD</option>
-                            <option value="PAB">PAB</option>
-                            <option value="PEN">PEN</option>
-                            <option value="PHP">PHP</option>
-                            <option value="PKR">PKR</option>
-                            <option value="PLN">PLN</option>
-                            <option value="PYG">PYG</option>
-                            <option value="RON">RON</option>
-                            <option value="RUB">RUB</option>
-                            <option value="SAR">SAR</option>
-                            <option value="SEK">SEK</option>
-                            <option value="SGD">SGD</option>
-                            <option value="THB">THB</option>
-                            <option value="TRY">TRY</option>
-                            <option value="TWD">TWD</option>
-                            <option value="UAH">UAH</option>
-                            <option value="UYU">UYU</option>
-                            <option value="ZAR">ZAR</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
- 
-            <div class="text-center"></div>
- 
-                <!-- convert button -->
-                <button class="btn btn-primary convert m-2" type="submit">
-                    Convert
-                </button>
-                <!-- reset button -->
-                <button class="btn btn-primary m-2" onclick="clearVal()">
-                    Reset
-                </button>
-            </div>
- 
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+  <div class="pageArea">
+    <div class="contentBox d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+      <!-- Header and Nav-->
+      <header class="mb-5">
+        <div>
+          <h3 class="float-md-start mb-0 title fs-1">MultiCalculator</h3>
+          <nav class="nav navHeader justify-content-center float-md-end bg-default subHeader">
+              <a class="navLinks active" aria-current="page" href="#">Currency Converter</a>
+              <a class="navLinks" href="#">Temperature Converter</a>
+          </nav>
         </div>
- 
-        <div id="finalAmount" class="text-center">
- 
-            <!-- Display the converted amount -->
-            <h2>Converted Amount :
-                <span class="finalValue" style="color:green;">
-                </span>
-            </h2>
-        </div>
+      </header>
+      <!-- Header and Nav END-->
+
+      <!-- Main Content -->
+      <main class="px-5">
+          <h1 class="display-1 title">Currency Converter</h1>
+
+
+          <p class="lead">Please choose your chosen currencies to convert between from the dropdowns.</p>
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">Convert From:</span>
+            <select id="currencyFrom" class="form-select" aria-label="CurrencySelect">
+              <option selected>Choose Currency</option>
+              <option value="1">GBP</option>
+              <option value="2">USD</option>
+              <option value="3">EUR</option>
+              <option value="4">JPY</option>
+              <option value="5">AUD</option>
+            </select>
+          </div>
+
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">Convert To:</span>
+            <select id="currencyTo" class="form-select" aria-label="CurrencySelect">
+              <option selected>Choose Currency</option>
+              <option value="GBP">GBP</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="JPY">JPY</option>
+              <option value="AUD">AUD</option>
+            </select>
+          </div>
+
+          <hr>
+
+          <p class="lead">Please enter the amount you wish to convert.</p>
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">Amount to Convert:</span>
+            <input id="currencyAmount" type="text" class="form-control" placeholder="Enter Amount" aria-label="ConversionAmount" aria-describedby="addon-wrapping">
+          </div>
+    
+          <hr>
+          <button id="btnCurrencyCalc">Convert</button>
+          <div class="d-flex flex-column">
+            <p class="lead">Your converted amount is:</p>
+            <p id="currencyResult" class="fs-5"></p>
+          </div>
+          
+      </main>
+      <!-- Main Content END-->
+
     </div>
- 
-    <!-- linking script.js file -->
-    <script src="/js/script.js"></script>
+
+  </div>
+
 </body>
+
+<!-- Import Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
 </html>
