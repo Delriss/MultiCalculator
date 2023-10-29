@@ -11,65 +11,66 @@
 
 <body>
   <h1>Currency Converter</h1>
+
+    <div class="container">
+        <div class="main">
+            <!-- Celcius input -->
+            <p>
+                <label>Celcius</label>
+                <input id="inputCelcius" type="number" placeholder="Celcius" oninput="tempConvertC(this.value)">
+            </p>
+            <!-- Fahrenheit input -->
+            <p>
+                <label>Fahrenheit</label>
+                <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="tempConvertF(this.value)">
+            </p>
+            <!-- Kelvin input -->
+            <p>
+                <label>Kelvin</label>
+                <input id="inputKelvin" type="number" placeholder="Kelvin" oninput="tempConvertK(this.value)">
+            </p>    
+
+            <!-- reset button -->
+            <button class="btn btn-primary m-2" onclick="clearVal()">Reset</button>
+        </div>
+
+        <script>
+            // Converts Celcius to Fahrenheit and Kelvin
+            function tempConvertC(valNum) {
+                valNum = parseFloat(valNum);
+                document.getElementById("inputFahrenheit").value = (valNum*1.8) + 32;
+                document.getElementById("inputKelvin").value = valNum + 273.15;
+            };
+            
+            // Converts Fahrenheit to Celcius and Kelvin
+            function tempConvertF(valNum) {
+                valNum = parseFloat(valNum);
+                document.getElementById("inputCelcius").value = (valNum-32) / 1.8;
+                document.getElementById("inputKelvin").value = ((valNum-32)/1.8)+273.15;
+            };
+
+            // Converts Kelvin to Celcius and Fahrenheit
+            function tempConvertK(valNum) {
+                valNum = parseFloat(valNum);
+                document.getElementById("inputCelcius").value = valNum-273.15;
+                document.getElementById("inputFahrenheit").value = ((valNum-273.15)*1.8)+32;
+            };
+
+            // Clears all the input fields when the user clicks the reset button
+            function clearVal() {
+                window.location.reload();
+            };
+        </script>
+            
+    </div>
 </body>
 
-<div class="container">
-        <div class="main">
-            <div class="form-group">
-                <label for="oamount">
-                    Amount to Convert :
-                </label>
-                <input type="text" class="form-control searchBox" placeholder="0" id="oamount">
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">From</span>
-                        </div>
-                        <select class="form-control from" id="sel1">
-                            <option value="">Select One …</option>
-                            <option value="Celcius">Celcius</option>
-                            <option value="Fahrenheit">Fahrenheit</option>
-                            <option value="Kelvin">Kelvin</option>
-                        </select>
-                    </div>
-                </div>
- 
-                <div class="col-sm-6">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">To</span>
-                        </div>
-                        <select class="form-control to" id="sel2">
-                            <option value="">Select One …</option>
-                            <option value="Celcius">Celcius</option>
-                            <option value="Fahrenheit">Fahrenheit</option>
-                            <option value="Kelvin">Kelvin</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
- 
-            <div class="text-center"></div>
- 
-                <!-- convert button -->
-                <button class="btn btn-primary convert m-2" type="submit">
-                    Convert
-                </button>
-                <!-- reset button -->
-                <button class="btn btn-primary m-2" onclick="clearVal()">
-                    Reset
-                </button>
-            </div>
- 
-        </div>
+
 
 
 
 <!-- Import Scripts -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
-<script src="js/currency.js"></script>
 
 </html>
